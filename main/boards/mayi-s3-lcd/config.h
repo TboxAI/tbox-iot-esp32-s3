@@ -1,0 +1,49 @@
+#ifndef _BOARD_CONFIG_H_
+#define _BOARD_CONFIG_H_
+
+#include <driver/gpio.h>
+
+#define BOOT_BUTTON_GPIO        GPIO_NUM_0
+
+#define BUILTIN_LED_GPIO        GPIO_NUM_7
+
+#define CODEC_TX_GPIO           GPIO_NUM_18
+#define CODEC_RX_GPIO           GPIO_NUM_17
+
+#define POWER_KRRP_GPIO         GPIO_NUM_9
+
+#define DISPLAY_WIDTH       360
+#define DISPLAY_HEIGHT      360
+#define DISPLAY_MIRROR_X    false
+#define DISPLAY_MIRROR_Y    false
+#define DISPLAY_SWAP_XY     false
+
+#define DISPLAY_OFFSET_X  0
+#define DISPLAY_OFFSET_Y  0
+
+#define DISPLAY_BACKLIGHT_PIN           QSPI_PIN_NUM_LCD_BL
+#define DISPLAY_BACKLIGHT_OUTPUT_INVERT false
+
+// #define QSPI_LCD_HOST           SPI3_HOST
+// #define QSPI_PIN_NUM_LCD_PCLK   GPIO_NUM_4
+// #define QSPI_PIN_NUM_LCD_CS     GPIO_NUM_43
+// #define QSPI_PIN_NUM_LCD_DATA0  GPIO_NUM_14
+// #define QSPI_PIN_NUM_LCD_DATA1  GPIO_NUM_13
+// #define QSPI_PIN_NUM_LCD_DATA2  GPIO_NUM_12
+// #define QSPI_PIN_NUM_LCD_DATA3  GPIO_NUM_11
+// #define QSPI_PIN_NUM_LCD_RST    GPIO_NUM_6
+// #define QSPI_PIN_NUM_LCD_BL     GPIO_NUM_1
+
+// 新硬件
+#define QSPI_LCD_HOST           SPI3_HOST
+#define QSPI_PIN_NUM_LCD_PCLK   GPIO_NUM_4
+#define QSPI_PIN_NUM_LCD_CS     GPIO_NUM_15
+#define QSPI_PIN_NUM_LCD_DATA0  GPIO_NUM_14
+#define QSPI_PIN_NUM_LCD_DATA1  GPIO_NUM_13
+#define QSPI_PIN_NUM_LCD_DATA2  GPIO_NUM_12
+#define QSPI_PIN_NUM_LCD_DATA3  GPIO_NUM_11
+#define QSPI_PIN_NUM_LCD_RST    GPIO_NUM_6
+#define QSPI_PIN_NUM_LCD_BL     GPIO_NUM_1
+#define QSPI_PIN_NUM_LCD_TE     GPIO_NUM_2
+
+#endif // _BOARD_CONFIG_H_
